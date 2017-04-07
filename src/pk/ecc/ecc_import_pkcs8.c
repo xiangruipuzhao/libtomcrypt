@@ -18,7 +18,7 @@
 #ifdef LTC_MECC
 
 int ecc_import_pkcs8(const unsigned char *in,  unsigned long inlen,
-                     const unsigned char *pwd, unsigned long pwdlen,
+                     const void *pwd, unsigned long pwdlen,
                      ecc_key *key, ltc_ecc_set_type *dp)
 {
    int err;
